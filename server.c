@@ -3,6 +3,7 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <sys.types.h>
+#include <netinet/in.h>
 
 int main() {
        FILE *html_data;
