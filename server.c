@@ -4,6 +4,8 @@
 #include <sys/socket.h>
 #include <sys.types.h>
 #include <netinet/in.h>
+#include <unistd.h>
+
 
 int main() {
        FILE *html_data;
@@ -32,9 +34,9 @@ int main() {
        int client_socket;
   
        while(1) {
-         client_soocket = accept(server_socket, NULL, NULL);
+         client_socket = accept(server_socket, NULL, NULL);
          send(client_socket, http_header, sizeof(http_header) ,0 );
-         cloose(client_socket);
+         close(client_socket);
        }
   
        return 0;
