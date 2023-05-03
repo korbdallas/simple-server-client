@@ -1,3 +1,9 @@
+// This is a server that will open a socket on port 8080. It will read from socket and write to /dev/null.\\
+// This application can be used for testing network throughput or possibly other learning exercises
+//
+// My end goal with this server is to add the option for random delays to show what happens when an application
+// does not read from it's socket buffer fast enough
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
