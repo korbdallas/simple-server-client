@@ -2,7 +2,7 @@
 //This is a simple client which is intended to connect to dev_null_server
 //once connected this client will push 4G of data read from /dev/zero
 //
-//Usage: ./dev_zero_client <server_ip> <port>
+//       Usage: ./dev_zero_client <server_ip> <port>
 //
 ///////////////////////////////////////////////////////////////////////////
 
