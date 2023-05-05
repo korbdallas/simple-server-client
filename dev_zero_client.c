@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
     struct sockaddr_in serv_addr;
     char buffer[BUFFER_SIZE];
     int zero_fd;
-    int total_bytes_sent = 0;
+    unsigned long total_bytes_sent = 0;
     unsigned long bytes_to_send = 4u * 1014u * 1024u * 1024u; // 4 GB
 
     // Open /dev/zero for reading
