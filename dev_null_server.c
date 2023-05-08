@@ -17,7 +17,10 @@
 
 int main(int argc, char const *argv[])
 {
-    int server_fd, new_socket, valread;
+    int server_fd = 0
+    int new_socket = 0
+    int valread = 0
+        
     struct sockaddr_in address;
     int opt = 1;
     int addrlen = sizeof(address);
