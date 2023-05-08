@@ -8,9 +8,8 @@ PORT = int (sys.argv[2])
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Connect the socket to a remote server
-#server_address = (sys.argv[1], sys.argv[2])
 sock.connect((HOST, PORT))
-print(" Connected to " + HOST + ":" + str(PORT))
+print("Connected to {}:{}".format(HOST, PORT))
 
 # Open /dev/zero for reading
 with open('/dev/zero', 'rb') as zero_file:
@@ -28,5 +27,6 @@ with open('/dev/zero', 'rb') as zero_file:
         bytes_to_read -= chunk_size
 
 # Close the socket
+print("Closing connection to {}:{}".format(HOST, PORT))
 sock.close()
 
