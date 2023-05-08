@@ -10,6 +10,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Connect the socket to a remote server
 #server_address = (sys.argv[1], sys.argv[2])
 sock.connect((HOST, PORT))
+print(" Connected to " + HOST + ":" + str(PORT))
 
 # Open /dev/zero for reading
 with open('/dev/zero', 'rb') as zero_file:
