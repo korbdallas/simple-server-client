@@ -1,15 +1,15 @@
-///////////////////////////////////////////////////////////////////////////
-//This is a simple client which is intended to connect to dev_null_server
-//once connected this client will push 4G of data read from /dev/zero
-//
-//       python dev_zero_client.py <server_ip> <port>
-//
-// Author: Michael Colombo
-// Date: 5/7/2023 
-//
-///////////////////////////////////////////////////////////////////////////
+###########################################################################
+##This is a simple client which is intended to connect to dev_null_server
+##once connected this client will push 4G of data read from /dev/zero
+##
+##       python dev_zero_client.py <server_ip> <port>
+##
+## Author: Michael Colombo
+## Date: 5/7/2023 
+##
+############################################################################
 
-#! /usr/bin/env python
+#!/usr/bin/env python
 
 import socket
 import sys
